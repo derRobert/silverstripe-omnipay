@@ -1,16 +1,22 @@
 {
-	"name": "burnbright/silverstripe-omnipay",
+	"name": "derrobert/silverstripe-omnipay",
 	"description": "SilverStripe Omnipay Payment Module",
 	"type": "silverstripe-module",
 	"license": "BSD-3-Clause",
 	"keywords": ["silverstripe","payment","omnipay"],
 	"require": {
-		"silverstripe/framework": "3.1.*",
-		"omnipay/omnipay": "1.1.x"
+		"derrobert/omnipay": "dev-master"
 	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@github.com:derRobert/omnipay.git"
+		}
+	],	
 	"require-dev": {
 		"guzzle/plugin-mock": "~3.1"
 	},
+	"minimum-stability": "dev",
 	"extra": {
 		"installer-name": "omnipay"
 	},
